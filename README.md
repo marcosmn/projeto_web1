@@ -21,7 +21,7 @@ Sugerir ações promissoras de acordo com os índices - Filtro para ajudar a enc
 ## Implementação
 Para o front-end nosso grupo decidiu utilizar das tecnologias principais como html, css e js, e junto delas usar o NodeJS como framework para ajudar na implementação tanto de backend quanto de frontend.
 
-Authors:
-  - HERBET PESSOA DA SILVA FILHO
-  - MARCOS MARTINS NÓBREGA
-  - PEDRO HENRIQUE SALES DOS SANTOS
+## Authors
+HERBET PESSOA DA SILVA FILHO
+MARCOS MARTINS NÓBREGA
+PEDRO HENRIQUE SALES DOS SANTOS
