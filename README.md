@@ -23,5 +23,7 @@ Para o front-end nosso grupo decidiu utilizar das tecnologias principais como ht
 
 ## Authors
 HERBET PESSOA DA SILVA FILHO
+
 MARCOS MARTINS NÓBREGA
+
 PEDRO HENRIQUE SALES DOS SANTOS
