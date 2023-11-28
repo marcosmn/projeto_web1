@@ -146,3 +146,6 @@ a.cadastro-link:hover {
     background-color: var(--cor-terciaria);
 }
 
+input.botao-enviar {
+    margin-top: 6px;
+}

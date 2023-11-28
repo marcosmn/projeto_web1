@@ -23,7 +23,7 @@ header{
 }
 
 main{
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-padrao);
     padding-top: 30px;
 }
 
@@ -121,7 +121,8 @@ a{
 
 a.cadastro-link {
     display: inline-block;
-    padding: 5px 10px;
+    padding-top: 8px;
+    padding-bottom: 0px;
     padding-left: 10px;
     padding-right: 10px;
     margin: 10px;
@@ -133,8 +134,8 @@ a.cadastro-link {
     border-radius: 20px;
     transition: 1s;
     width: 90%;
-    height: 30px;
     cursor: pointer;
+    height: 30px;
 }
 
 a.cadastro-link:hover {
