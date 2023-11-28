@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    --cor-fonte-padrao: white;
+    --cor-fonte-alternativa: black;
+    --cor-padrao:  rgb(3, 3, 26);
+    --cor-secundaria: aliceblue;
+    --cor-terciaria: rgb(13, 13, 68);
+    --cor-borda: #ccc;
+    --fonte: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html, body{
+    background-color: var(--cor-padrao);
+    margin: 0px;
+    padding: 0px;
+    color: var(--cor-fonte-padrao);
+}
+
+header{
+    background-color: var(--cor-padrao);
+    text-align: center;
+}
+
+main{
+    background-color: var(--cor-secundaria);
+    padding-top: 30px;
+}
+
+
+/* form.formulario{
+    margin: 10px;
+    padding: 15px;
+} */
+
+form{
+    background-color: var(--cor-secundaria);
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-bottom: 50px; 
+    margin-top: 50px;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+
+
+div.cadastro{
+    text-align: center;
+    width: 48%; 
+    display: inline-block;
+}
+
+h1{
+    text-align: center;
+    color: var(--cor-fonte-padrao);
+    font-family: var(--fonte);
+}
+
+form h3 {
+    text-align: center;
+    color: var(--cor-padrao);
+    font-family: var(--fonte);
+}
+
+form h4{
+    text-align: left;
+    color: var(--cor-padrao);
+    font-family: var(--fonte);
+    margin-top: 10px;
+}
+
+/* input{
+    width: 100%;
+    padding: 4px;
+} */
+
+form input[type=text]{
+    width: 100%;
+    height: 45px;
+    border: solid 1px var(--cor-borda);
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+form input[type=submit]{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    background-color: var(--cor-padrao);
+    color: var(--cor-fonte-padrao);
+    border: 0;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+button.cadastro{
+    color: var(--cor-fonte-padrao);
+    background-color: var(--cor-padrao);
+    font-weight:700;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+button.cadastro :hover{
+    background-color: var(--cor-terciaria);
+}
+
+a{
+    color: var(--cor-fonte-padrao);
+    text-decoration: none;
+}
+
+footer{
+    background-color: var(--cor-padrao);
+    text-align: center;
+    position:fixed;
+    width:100%;
+    bottom:0;
+}
+
