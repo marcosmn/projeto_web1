@@ -6,14 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cadastro de usuário</title>
         <link rel="stylesheet" href="../css/cadastro.css">
+        <script>
+            function cadastrar(){
+                window.location.href = "/login.html";
+            }
+
+            function voltar(){
+                window.location.href = "/login.html";
+            }
+        </script>
     </head>
-
     <body>
-
         <header>
             <h1>Cadastro</h1> 
         </header>
-
 
         <main>
             <form class="formulario">
@@ -48,9 +54,8 @@
                 </section>
 
                 <div class="cadastro">
-                    <!-- <button type="submit" class="cadastro">Cadastrar</button> -->
                     <input type="submit" name="cadastro" placeholder="Cadastrar"/>
-                    <a href="login.html"><button class="cadastro">Voltar</button></a>
+                    <button type="button" class="cadastro" onclick="voltar()">Voltar</button>
                 </div>
             </form>
 
