@@ -27,12 +27,6 @@ main{
     padding-top: 30px;
 }
 
-
-/* form.formulario{
-    margin: 10px;
-    padding: 15px;
-} */
-
 form{
     background-color: var(--cor-secundaria);
     max-width: 500px;
@@ -73,10 +67,6 @@ form h4{
     margin-top: 10px;
 }
 
-/* input{
-    width: 100%;
-    padding: 4px;
-} */
 
 form input[type=text]{
     width: 100%;
@@ -103,9 +93,9 @@ form input[type=submit]:hover{
 
 form input[type=submit],
 a.cadastro-link {
-    width: 48%; /* Isso faz com que cada botão ocupe metade da largura da div.cadastro */
-    flex: 1; /* Isso faz com que ambos os botões ocupem a mesma quantidade de espaço */
-    height: 40px; /* Altura desejada */
+    width: 48%; 
+    flex: 1; 
+    height: 40px; 
     cursor: pointer;
     border: 0;
     border-radius: 20px;
@@ -117,25 +107,6 @@ a.cadastro-link:hover {
     background-color: var(--cor-terciaria);
 }
 
-/* button.cadastro{
-    color: var(--cor-fonte-padrao);
-    background-color: var(--cor-padrao);
-    font-weight:700;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 10px;
-    width: 100%;
-    height: 40px;
-    cursor: pointer;
-    border: 0;
-    border-radius: 20px;
-    transition: 1s;
-} */
-
-/* button.cadastro:hover{
-    background-color: var(--cor-terciaria);
-} */
 
 div.cadastro {
     display: flex;
@@ -156,7 +127,7 @@ a.cadastro-link {
     margin: 10px;
     color: var(--cor-fonte-padrao);
     background-color: var(--cor-padrao);
-    font-weight: 700;
+    font-weight: 100;
     text-decoration: none;
     border: 0;
     border-radius: 20px;
@@ -164,7 +135,6 @@ a.cadastro-link {
     width: 90%;
     height: 30px;
     cursor: pointer;
-    /* text-align: center; */
 }
 
 a.cadastro-link:hover {
