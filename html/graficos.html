@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../css/base.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
     <script>
+        import Chart from 'chart.js/auto';
+
         function voltar(){
             window.location.href = "principal.html";
         }
@@ -19,6 +22,25 @@
         function mudarIndice(indice){
             console.log("Mudando para o indice: " + indice);
         }
+    </script>
+    <script>
+        new Chart("myChart", {
+            type: "line",
+            data: {
+                labels: xValues,
+                datasets: [{
+                backgroundColor:"rgba(0,0,255,1.0)",
+                borderColor: "rgba(0,0,255,0.1)",
+                data: yValues
+                }]
+            },
+            options: {
+                legend: {display: false},
+                scales: {
+                yAxes: [{ticks: {min: 6, max:16}}],
+                }
+            }
+        });
     </script>
 </head>
 <body>
@@ -35,7 +57,8 @@
         </div>
 
         <div class="grafico">
-            <img class="grafico" src="../imagens/graph1.jpg" alt="grafico_indice1">
+            <!--<img class="grafico" src="../imagens/graph1.jpg" alt="grafico_indice1">-->
+            <div><canvas id="myChart"></canvas></div>
 
             <div class="indices">
                 <button type="button" class="indice" onclick="mudarIndice(1)"><i class="fa fa-tag"></i> Indice 1</button>
