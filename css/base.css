@@ -5,13 +5,13 @@ body{
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-    --cor-padrao:  rgb(38, 123, 221);
-    --cor-secundaria: rgb(200, 255, 0);
-    color: white;
-    --cor-fonte-alternativa: black;
-}
+        margin: 0px;
+        padding: 0px;
+        --cor-fonte-padrao: white;
+        --cor-fonte-alternativa: black;
+        --cor-padrao:  rgb(3, 3, 26);
+        --cor-secundaria: aliceblue;
+    }
 
 /* paginas */
 
@@ -32,6 +32,10 @@ main{
     padding: 10px;
 }
 
+h1{
+    color: var(--cor-fonte-padrao);
+}
+
 button.voltar{
     display: flex;
     margin: auto;
@@ -39,7 +43,8 @@ button.voltar{
     width: 100px;
     height: 50px;
     text-align: center;
-    background-color: darkgreen;
+    background-color: var(--cor-padrao);
+    color: var(--cor-fonte-padrao);
     margin-top: 30px;
     margin-bottom: 30px;
     justify-content: center;
@@ -50,9 +55,9 @@ button.voltar{
 /* graficos.html */
 
 .pesquisa input {
-    background-color: darkgreen;
+    background-color: var(--cor-padrao);
     border: none;
-    color: lightgrey;
+    color: var(--cor-fonte-padrao);
     padding: 10px;
     font-size: 16px;
     margin: 10px;
@@ -60,9 +65,9 @@ button.voltar{
 }
 
 .indice {
-    background-color: DodgerBlue;
+    background-color: var(--cor-padrao);
     border: none;
-    color: white;
+    color: var(--cor-fonte-padrao);
     padding: 12px 16px;
     font-size: 16px;
     margin: 10px;
@@ -93,7 +98,7 @@ div.indices{
 .titulo h2{
     display: flex;
     justify-content: center;
-    color: black;
+    color: var(--cor-fonte-alternativa);
 }
 
 .coluna {
@@ -103,9 +108,9 @@ div.indices{
 }
 
 .acao {
-    background-color: darkslategrey;
+    background-color: var(--cor-padrao);
     border: none;
-    color: white;
+    color: var(--cor-fonte-padrao);
     padding: 12px 16px;
     font-size: 16px;
     margin: 10px;
