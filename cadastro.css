@@ -1,14 +1,17 @@
 * {
     margin: 0px;
     padding: 0px;
-    --cor-padrao:  rgb(38, 123, 221);
-    --cor-secundaria: rgb(200, 255, 0);
+    --cor-fonte-padrao: white;
+    --cor-fonte-alternativa: black;
+    --cor-padrao:  rgb(3, 3, 26);
+    --cor-secundaria: aliceblue;
 }
 
 html, body{
     background-color: var(--cor-secundaria);
     margin: 0px;
     padding: 0px;
+    color: var(--cor-fonte-padrao);
 }
 
 header{
@@ -21,6 +24,7 @@ main{
     padding-top: 30px;
 }
 
+
 form.formulario{
     margin: 10px;
     padding: 15px;
@@ -31,16 +35,30 @@ div.cadastro{
     text-align: center;
 }
 
+h3{
+    color: var(--cor-fonte-alternativa);
+    margin-top: 10px;
+}
+
+
 input{
     width: 100%;
     padding: 4px;
 }
 
 button.cadastro{
+    color: var(--cor-fonte-padrao);
     background-color: var(--cor-padrao);
     font-weight:700;
     padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 10px;
+}
+
+a{
+    color: var(--cor-fonte-padrao);
+    text-decoration: none;
 }
 
 footer{
