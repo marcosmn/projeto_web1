@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
     <head>
         <title>Cadastro de ação</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/cadastroDeAcoes.css">
+        <script>
+            function voltar(){
+                window.location.href = "/principal.html";
+            }
+        </script>
     </head>
-
     <body>
-        <form>
+        <form action="/principal.html">
             <h3>Cadastro de ações</h3>
             <input type="text" name="codigoAcao" placeholder="Codigo da Ação"/>
             <input type="text" name="nomeEmpresa" placeholder="Nome da empresa"/>

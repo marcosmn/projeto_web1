@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="base.css">
+    <script>
+        function voltar(){
+            window.location.href = "/principal.html";
+        }
+
+        let buscar = document.getElementById("buscar");
+
+        buscar.addEventListener("submit", (e) => {
+            e.preventDefault();
+        });
+
+        function mudarIndice(indice){
+            console.log("Mudando para o indice: " + indice);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Gráficos</h1>
+    </header>
+
+    <main>
+        <div class="pesquisa">
+            <form id="buscar" action="/graficos.html">
+                <input type="text" placeholder="Buscar...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <div class="grafico">
+            <img class="grafico" src="imagens/graph1.jpg" alt="grafico_indice1">
+
+            <div class="indices">
+                <button type="button" class="indice" onclick="mudarIndice(1)"><i class="fa fa-tag"></i> Indice 1</button>
+                <button type="button" class="indice" onclick="mudarIndice(2)"><i class="fa fa-tag"></i> Indice 2</button>
+                <button type="button" class="indice" onclick="mudarIndice(3)"><i class="fa fa-tag"></i> Indice 3</button>
+                <button type="button" class="indice" onclick="mudarIndice(4)"><i class="fa fa-tag"></i> Indice 4</button>
+                <button type="button" class="indice" onclick="mudarIndice(5)"><i class="fa fa-tag"></i> Indice 5</button>
+            </div>
+        </div>
+
+        <div class="voltar">
+            <button type="button" class="voltar" onclick="voltar()">Voltar</button>
+        </div>
+    </main>
+    
+    <footer>
+        <strong>Assistência virtual para bolsa de valores</strong>
+    </footer>
+</body>
+</html>
