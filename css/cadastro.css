@@ -97,7 +97,27 @@ form input[type=submit]{
     transition: 1s;
 }
 
-button.cadastro{
+form input[type=submit]:hover{
+    background-color: var(--cor-terciaria);
+}
+
+form input[type=submit],
+a.cadastro-link {
+    width: 48%; /* Isso faz com que cada botão ocupe metade da largura da div.cadastro */
+    flex: 1; /* Isso faz com que ambos os botões ocupem a mesma quantidade de espaço */
+    height: 40px; /* Altura desejada */
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+form input[type=submit]:hover,
+a.cadastro-link:hover {
+    background-color: var(--cor-terciaria);
+}
+
+/* button.cadastro{
     color: var(--cor-fonte-padrao);
     background-color: var(--cor-padrao);
     font-weight:700;
@@ -111,15 +131,44 @@ button.cadastro{
     border: 0;
     border-radius: 20px;
     transition: 1s;
-}
+} */
 
-button.cadastro :hover{
+/* button.cadastro:hover{
     background-color: var(--cor-terciaria);
+} */
+
+div.cadastro {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 a{
     color: var(--cor-fonte-padrao);
     text-decoration: none;
+}
+
+a.cadastro-link {
+    display: inline-block;
+    padding: 5px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    color: var(--cor-fonte-padrao);
+    background-color: var(--cor-padrao);
+    font-weight: 700;
+    text-decoration: none;
+    border: 0;
+    border-radius: 20px;
+    transition: 1s;
+    width: 90%;
+    height: 30px;
+    cursor: pointer;
+    /* text-align: center; */
+}
+
+a.cadastro-link:hover {
+    background-color: var(--cor-terciaria);
 }
 
 footer{
