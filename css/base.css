@@ -116,3 +116,7 @@ div.indices{
     margin: 10px;
     width: 80%;
 }
+
+footer {
+    color: var(--cor-fonte-padrao);
+}
