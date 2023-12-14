@@ -12,3 +12,6 @@ else{
     console.log("Não existe");
 }
 
+function voltar(){
+    window.location.href = "principal.html";
+}
