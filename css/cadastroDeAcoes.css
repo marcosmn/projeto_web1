@@ -67,7 +67,7 @@ form input[type=date]{
     font-family: var(--fonte);
 }
 
-form input[type=submit]{
+form button[type=button]{
     width: 100%;
     height: 40px;
     cursor: pointer;
@@ -78,7 +78,7 @@ form input[type=submit]{
     transition: 1s;
 }
 
-form input[type=submit]:hover{
+form button[type=button]:hover{
     background-color: var(--cor-terciaria);
 }
 
@@ -102,7 +102,7 @@ form div.cadastroDeAcoes{
     justify-content: space-between;
 }
 
-form input[type=submit],
+form button[type=button],
 a.cadastro-link {
     width: 48%; 
     flex: 1; 
@@ -113,7 +113,7 @@ a.cadastro-link {
     transition: 1s;
 }
 
-form input[type=submit]:hover,
+form button[type=button]:hover,
 a.cadastro-link:hover {
     background-color: var(--cor-terciaria);
 }
@@ -145,6 +145,6 @@ a.cadastro-link:hover {
     background-color: var(--cor-terciaria);
 }
 
-input.botao-enviar {
+button.botao-enviar {
     margin-top: 6px;
 }
