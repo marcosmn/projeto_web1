@@ -5,11 +5,7 @@
         <title>Cadastro de ação</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="../css/cadastroDeAcoes.css">
-        <script>
-            function voltar(){
-                window.location.href = "/principal.html";
-            }
-        </script>
+        <script src="../js/cadastroDeAcoes.js"></script>
     </head>
 
     <body>
@@ -19,38 +15,38 @@
 
                 <section>
                     <h4>Codigo da Ação:</h4>
-                    <input type="text" name="codigoAcao" placeholder="Codigo da Ação"/>
+                    <input type="text" id="codigoAcao" name="codigoAcao" placeholder="Codigo da Ação"/>
                 </section>
 
                 <section>
                     <h4>Nome da empresa:</h4>
-                    <input type="text" name="nomeEmpresa" placeholder="Nome da empresa"/>
+                    <input type="text" id="nomeEmpresa" name="nomeEmpresa" placeholder="Nome da empresa"/>
                 </section>
 
                 <section>
                     <h4>Bolsa de valores:</h4>
-                    <input type="text" name="BolsaDeValores" placeholder="Bolsa de valores"/>
+                    <input type="text" id="bolsaDeValores" name="BolsaDeValores" placeholder="Bolsa de valores"/>
                 </section>
                 
                 <section>
                     <h4>Valor da compra:</h4>
-                    <input type="text" name="valorCompra" placeholder="Valor da compra"/>
+                    <input type="text" id="valorCompra" name="valorCompra" placeholder="Valor da compra"/>
                 </section>
 
                 <section>
                     <div class="coluna">
                         <h4>Quantidade de Ações:</h4>
-                        <input type="int" name="numAcoes" placeholder="Quantidade de Ações"/>
+                        <input type="int" id="numAcoes" name="numAcoes" placeholder="Quantidade de Ações"/>
                     </div>
 
                     <div class="coluna" id="data">
                         <h4>Data da compra:</h4>
-                        <input type="date" name="dataCompra" placeholder="Data da compra"/>
+                        <input type="date" id="dataCompra" name="dataCompra" placeholder="Data da compra"/>
                     </div>
                 </section>
                 
                 <div class="cadastroDeAcoes">
-                    <input class="botao-enviar" type="submit" name="submeter" placeholder="Enviar"/>
+                    <button class="botao-enviar" type="button" name="submeter" placeholder="Enviar" onclick="cadastrarAcao()">Enviar</button>
                     <a href="../html/principal.html" class="cadastro-link">Voltar</a>
                 </div>
 
