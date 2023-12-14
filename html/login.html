@@ -3,17 +3,20 @@
     <head>
         <title>Login</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../css/login.css">
     </head>
     <body>
         <form>
             <h3>Login</h3>
-            <input type="text" name="email" placeholder="Seu e-mail"/>
-            <input type="password" name="senha" placeholder="Sua senha"/>
-            <input type="submit" name="acao" placeholder="Enviar"/>
+            <input type="text" id="email" name="email" placeholder="Seu e-mail"/>
+            <input type="password" id="senha" name="senha" placeholder="Sua senha"/>
+            <input type="button" name="acao" value="Enviar" onclick="login()"/>
 
             <p>Ainda não possui cadastro? Clique <strong><a href="cadastro.html">aqui</a></strong>.</p>
         </form>
+        
+        <script src="../js/validarLogin.js"></script>
         
     </body>
 </html>
