@@ -67,18 +67,10 @@ section{
     right: 10%;
     top: 30%;
     nav-down: 30%;
-    /* flex-wrap: wrap; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-/* section{
-    position: relative;
-    background-color: var(--cor-secundaria);
-    left: 10%;
-    right: 10%;
-    top: 30%;
-    nav-down: 30%;
-} */
+
 
 div{
     /* display: flex; */
@@ -90,16 +82,7 @@ div{
     text-align: center;
     border-radius: 20px;
 }
-/* div{
-    display: inline-block;
-    width: 175px;
-    height: 70px;
-    margin: 20px;
-    padding-top: 15px;
-    background-color: var(--cor-padrao);
-    text-align: center;
-    border-radius: 20px;
-} */
+
 
 div.perfil{
     color: var(--cor-fonte-padrao);
