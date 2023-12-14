@@ -1,19 +1,19 @@
 const express = require('express')
-const baseController = require('./baseController');
+const userController = require('./userController');
+const shareController = require('./shareController');
 
 const app = express()
 
-// GET
-app.get('/api/user', baseController.getUsers);
+// USER api
+app.get('/api/user', userController.getUsers);
+app.get('/api/user/:id', userController.getUser);
+app.post('/api/user', userController.createUser);
+app.put('/api/user', userController.updateUser);
+app.delete('/api/user', userController.deleteUser);
 
-// GET
-app.get('/api/user/:id', baseController.getUser);
-
-// POST
-app.post('/api/user', baseController.createUser);
-
-// PUT
-app.put('/api/user', baseController.updateUser);
-
-// Delete
-app.delete('/api/user', baseController.deleteUser);
+// SHARE api
+app.get('/api/shares', shareController.getShares);
+app.get('/api/share/:id', shareController.getShare);
+app.post('/api/share', shareController.createShare);
+app.put('/api/share', shareController.updateShare);
+app.delete('/api/share', shareController.deleteShare);
