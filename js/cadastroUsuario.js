@@ -11,7 +11,7 @@ function cadastrar(){
         senha: senha,
         contato: contato,
         email: email
-    };
+    }; 
 
     // Armazena os dados localmente
     localStorage.setItem('usuario', JSON.stringify(usuario));

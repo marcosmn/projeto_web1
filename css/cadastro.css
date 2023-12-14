@@ -69,7 +69,7 @@ form h4{
 
 
 form input[type=text], input[type=password]{
-    width: 100%;
+    width: 100%; 
     height: 45px;
     border: solid 1px var(--cor-borda);
     padding-left: 10px;
