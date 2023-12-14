@@ -1,8 +1,7 @@
 *{
     margin: 0; 
     padding: 0; 
-    box-sizing: 
-    border-box;
+    box-sizing: border-box;
     --cor-fonte-padrao: white;
     --cor-fonte-alternativa: black;
     --cor-padrao:  rgb(3, 3, 26);
