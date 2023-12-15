@@ -1,16 +1,17 @@
-import { useEffect } from "react";
-import app from "../../app"
+//import { useEffect } from "react";
+//import app from "./app"
 
 export default function Melhores() {
     const acessarAcao = (acao) => {
         console.log("Acessando ação: " + acao);
     }
-    
+    /*
     useEffect(() => {
         app.get().then((resp) => {
             console.log(resp);
         })
     }, []);
+    */
     
     return (
         <div>

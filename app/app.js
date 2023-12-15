@@ -1,8 +1,12 @@
 const express = require('express')
-const userController = require('./src/js/userController');
-const shareController = require('./src/js/shareController');
+const userController = require('./js/userController');
+const shareController = require('./js/shareController');
 
 const app = express()
+
+app.listen(3000, function() {
+    console.log("Server is listening on port 3000...");
+});
 
 // USER api
 app.get('/api/user', userController.getUsers);
@@ -17,7 +21,3 @@ app.get('/api/share/:id', shareController.getShare);
 app.post('/api/share', shareController.createShare);
 app.put('/api/share', shareController.updateShare);
 app.delete('/api/share', shareController.deleteShare);
-
-app.listen(3000, function() {
-    console.log("Server is listening on port 3000...");
-});
