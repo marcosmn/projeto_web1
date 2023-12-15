@@ -4,14 +4,18 @@ body{
     background-color: var(--cor-secundaria);
 }
 
-* {
-        margin: 0px;
-        padding: 0px;
-        --cor-fonte-padrao: white;
-        --cor-fonte-alternativa: black;
-        --cor-padrao:  rgb(3, 3, 26);
-        --cor-secundaria: aliceblue;
-    }
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    --cor-fonte-padrao: white;
+    --cor-fonte-alternativa: black;
+    --cor-padrao:  rgb(3, 3, 26);
+    --cor-secundaria: aliceblue;
+    --cor-terciaria: rgb(13, 13, 68);
+    --cor-borda: #ccc;
+    --fonte: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 /* paginas */
 
