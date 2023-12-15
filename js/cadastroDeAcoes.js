@@ -17,6 +17,13 @@ function cadastrarAcao(){
         dataCompra: dataCompra
     };
 
+    /*
+        pseudo-codigo
+
+        GravarNoBD(acao);
+
+    */
+
     // Armazena os dados localmente
     localStorage.setItem('acao', JSON.stringify(acao));
 

@@ -12,6 +12,19 @@ else{
     console.log("Não existe");
 }
 
+
+/*
+    pseudo-codigo - Substitui a lógica do bloco de código pós-comentario abaixo
+
+    principaisAcoes = listaDeTodasAcoes; // Coleta no banco de dados
+
+    funtion coletaNomeCod(){
+        for(;;){
+            percorre a lista e adiciona cada objeto a lista da tela perfil
+        }
+    }
+
+*/
 var principaisAcoes = localStorage.getItem("acao");
 
 if(principaisAcoes){

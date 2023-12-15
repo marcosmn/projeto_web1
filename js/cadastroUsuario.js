@@ -13,6 +13,13 @@ function cadastrar(){
         email: email
     }; 
 
+    /*
+        pseudo-codigo
+
+        GravarNoBD(usuario);
+
+    */
+
     // Armazena os dados localmente
     localStorage.setItem('usuario', JSON.stringify(usuario));
 
