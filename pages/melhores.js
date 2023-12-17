@@ -1,5 +1,4 @@
-//import { useEffect } from "react";
-//import app from "./app"
+import Link from 'next/link'
 
 export default function Melhores() {
     const styles = {
@@ -59,6 +58,10 @@ export default function Melhores() {
             justifyContent: "center",
             alignItems: "center",
             fontSize: "20px",
+        },
+        link: {
+            textDecoration: "none",
+            color: "white"
         }
     }
 
@@ -103,7 +106,7 @@ export default function Melhores() {
                 </div>
 
                 <div>
-                    <button type="button" style={styles.voltar} onclick="voltar()">Voltar</button>
+                    <button type="button" style={styles.voltar}><Link href="/" style={styles.link}>Voltar </Link></button>
                 </div>
             </main>
             

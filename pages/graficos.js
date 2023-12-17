@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Chart, registerables } from 'chart.js';
 Chart.register(...registerables);
 
+import Link from 'next/link'
 export default function Graficos() {
     const styles = {
         header: {
@@ -70,6 +71,10 @@ export default function Graficos() {
             justifyContent: "center",
             alignItems: "center",
             fontSize: "20px",
+        }, 
+        link: {
+            textDecoration: "none",
+            color: "white"
         }
     }
 
@@ -132,7 +137,7 @@ export default function Graficos() {
                 </div>
                 
                 <div>
-                    <button type="button" style={styles.voltar} onclick="voltar()">Voltar</button>
+                    <button type="button" style={styles.voltar} ><Link href="/" style={styles.link}>Voltar </Link></button>
                 </div>
             </main>
             
