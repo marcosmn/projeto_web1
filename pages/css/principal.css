@@ -1,18 +1,18 @@
-* {
+/* * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    --cor-fonte-padrao: white;
+    white: white;
     --cor-fonte-alternativa: black;
-    --cor-padrao:  rgb(3, 3, 26);
-    --cor-secundaria: aliceblue;
-    --cor-terciaria: rgb(13, 13, 68);
+    rgb(3, 3, 26):  rgb(3, 3, 26);
+    aliceblue: aliceblue;
+    rgb(13, 13, 68): rgb(13, 13, 68);
     --cor-borda: #ccc;
-    --fonte: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+    'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
 
 main{
-    background-color: var(--cor-secundaria);
+    background-color: aliceblue);
     max-width: 500px;
     width: 70%;
     padding: 250px;
@@ -31,38 +31,38 @@ main section{
 
 
 html, body{
-    color: var(--cor-fonte-padrao);
-    background-color: var(--cor-padrao);
+    color: white);
+    background-color: rgb(3, 3, 26));
     margin: 0px;
     padding: 0px;
 }
 
 main section h1{
-    color: var(--cor-padrao);
-    font-family: var(--fonte);
+    color: rgb(3, 3, 26));
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif);
     text-align: center;
 }
 
 main h3 {
     text-align: center;
-    color: var(--cor-secundaria);
-    font-family: var(--fonte);
+    color: aliceblue);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif);
 }
 
 a{
-    color: var(--cor-fonte-padrao);
+    color: white);
     text-decoration: none;
     cursor: pointer;
 }
 
 a:hover{
-    background-color: var(--cor-terciaria);
-    color: var(--cor-fonte-padrao);
+    background-color: rgb(13, 13, 68));
+    color: white);
 }
 
 section{
     position: relative;
-    background-color: var(--cor-secundaria);
+    background-color: aliceblue);
     left: 10%;
     right: 10%;
     top: 30%;
@@ -78,46 +78,46 @@ div{
     height: 70px;
     margin: 20px;
     padding-top: 15px;
-    background-color: var(--cor-padrao);
+    background-color: rgb(3, 3, 26));
     text-align: center;
     border-radius: 20px;
 }
 
 
 div.perfil{
-    color: var(--cor-fonte-padrao);
+    color: white);
 }
 
 div.perfil:hover{
-    background-color: var(--cor-terciaria);
+    background-color: rgb(13, 13, 68));
 }
 
 div.top-10{
-    color: var(--cor-fonte-padrao);
+    color: white);
 }
 
 div.top-10:hover{
-    background-color: var(--cor-terciaria);
+    background-color: rgb(13, 13, 68));
 }
 
 div.cadastrar-ativos{
-    color: var(--cor-fonte-padrao);
+    color: white);
 }
 
 div.cadastrar-ativos:hover{
-    background-color: var(--cor-terciaria);
+    background-color: rgb(13, 13, 68));
 }
 
 div.graficos{
-    color: var(--cor-fonte-padrao);
+    color: white);
 }
 
 div.graficos:hover{
-    background-color: var(--cor-terciaria);
+    background-color: rgb(13, 13, 68));
 }
 
 footer{
-    background-color: var(--cor-padrao);
+    background-color: rgb(3, 3, 26));
     text-align: center;
     position:fixed;
     width:100%;

@@ -3,27 +3,79 @@ import Link from 'next/link'
 import Melhores from "./melhores"
 
 export default function Index() {
-    return (
-      <html lang="en">
-        <head>
+    const styles = {
+      header: {
+        backgroundColor: "rgb(3, 3, 26)",
+        color: "white", 
+        textAlign: "center",
+        width: "100%",
+        paddingTop: "2px",
+        paddingBottom: "1px"
+      },
+      main: {
+        backgroundColor: "aliceblue",
+        maxWidth: "500px",
+        width: "100%",
+        padding: "100px",
+        textAlign: "center",
+        marginRight: "40%",
+        marginLeft: "25%"
+    },
 
-        </head>
-        <body>
-          <ul>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/perfil">Perfil</Link>
-            </li>
-            <li>
-              <Link href="/melhores">Melhores</Link>
-            </li>
-            <li>
-              <Link href="/graficos">Graficos</Link>
-            </li>
-          </ul>
-        </body>
-      </html>
+    
+    
+    div: {
+        width: "90%",
+        height: "70px",
+        margin: "20px",
+        marginTop: "7px", 
+        paddingTop: "10px",
+        backgroundColor: "rgb(3, 3, 26)",
+        textAlign: "center",
+    },
+
+    h3: {
+      color: "white",
+      textDecoration: "none"
+    },
+        
+    footer: {
+        backgroundColor: "rgb(3, 3, 26)",
+        textAlign: "center",
+        position: "fixed",
+        width: "100%",
+        bottom:"0",
+        color: "white"
+    }
+  }
+
+    return (
+      <>
+        <header style={styles.header}>
+          <h1>Principal</h1>
+        </header>
+
+        <main style={styles.main}>
+              <div style={styles.div} class="perfil">
+              <Link href="/perfil"><h3 style={styles.h3}>Perfil</h3></Link>
+              </div>
+              
+              <div style={styles.div}class="top-10">
+                <Link href="/melhores"><h3 style={styles.h3}>Melhores</h3></Link>
+              </div>
+              
+              <div style={styles.div}class="cadastrar-ativos">
+                  <a href="cadastroDeAcoes.html"><h3 style={styles.h3}>Cadastrar Ativos</h3></a>
+              </div>
+              
+              <div style={styles.div} class="graficos">
+                <Link href="/graficos"><h3 style={styles.h3}>Graficos</h3></Link>
+              </div>
+      </main>
+
+      <footer style={styles.footer}>
+          <strong>Assistência virtual para bolsa de valores</strong>
+      </footer>
+    </>
     )
 }

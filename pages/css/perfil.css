@@ -1,26 +1,17 @@
 
-* {
-    margin: 0px;
-    padding: 0px;
-    --cor-fonte-padrao: white;
-    --cor-fonte-alternativa: black;
-    --cor-padrao:  rgb(3, 3, 26);
-    --cor-secundaria: aliceblue;
-}
-
 header{
-    background-color: var(--cor-padrao);
+    background-color: rgb(3, 3, 26);
     text-align: center;
 }
 
 body, html{
-    color: var(--cor-fonte-padrao);
-    background-color: var(--cor-secundaria);
+    color: white;
+    background-color: aliceblue;
 }
 
 div.principais-ativos{
     display: inline-block;
-    background-color: var(--cor-padrao);
+    background-color: rgb(3, 3, 26);
     width: 50%;
     max-width: 400px;
     min-width: 250px;
@@ -34,7 +25,7 @@ div.foto-perfil, div.voltar{
     position: fixed;
     right: 0;
     display: inline-block;
-    background-color: var(--cor-secundaria);
+    background-color: aliceblue;
     width: 300px;
     height: 250px;
     text-align: center;
@@ -47,7 +38,7 @@ img.foto-perfil{
 }
 
 h2.nome-usuario{
-    color: var(--cor-fonte-alternativa);
+    color: black;
     text-align: center;
 }
 
@@ -56,7 +47,7 @@ h3.e-mail{
     margin-right: 20px;
     margin-left: 20px;
     width: 250px;
-    background-color: var(--cor-padrao);
+    background-color: rgb(3, 3, 26);
 }
 
 div.voltar{
@@ -70,19 +61,19 @@ div.voltar{
 }
 
 button.voltar{
-    background-color: var(--cor-padrao);
+    background-color: rgb(3, 3, 26);
     font-weight:700;
     padding: 5px;
     margin: 10px;
 }
 
 button{
-    color: var(--cor-fonte-padrao);
+    color: white;
     text-decoration: none;
 }
 
 footer{
-    background-color: var(--cor-padrao);
+    background-color: rgb(3, 3, 26);
     text-align: center;
     position:fixed;
     width:100%;
