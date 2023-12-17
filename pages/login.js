@@ -3,6 +3,12 @@ export default function Login() {
       body: {
         backgroundColor: "rgb(3, 3, 26)",
       },
+      container: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+      },
       form: {
         backgroundColor: "aliceblue",
         maxWidth: "500px",
@@ -73,40 +79,42 @@ export default function Login() {
         </header>
   
         <body style={styles.body}>
-          <form>
-            <h3 style={styles.h3}>Login</h3>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Seu e-mail"
-              style={styles.input}
-            />
-            <input
-              type="password"
-              id="senha"
-              name="senha"
-              placeholder="Sua senha"
-              style={styles.input}
-            />
-            <input
-              type="button"
-              name="acao"
-              value="Enviar"
-              onClick={login} 
-              style={styles.button}
-            />
-  
-            <p>
-              Ainda não possui cadastro? Clique{" "}
-              <strong>
-                <a href="cadastro.html" style={styles.a}>
-                  aqui
-                </a>
-              </strong>
-              .
-            </p>
-          </form>
+            <div style={styles.container}>
+                <form style={styles.form}>
+                    <h3 style={styles.h3}>Login</h3>
+                    <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Seu e-mail"
+                    style={styles.input}
+                    />
+                    <input
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    placeholder="Sua senha"
+                    style={styles.input}
+                    />
+                    <input
+                    type="button"
+                    name="acao"
+                    value="Enviar"
+                    onClick={login} 
+                    style={styles.button}
+                    />
+        
+                    <p style={styles.p}>
+                    Ainda não possui cadastro? Clique{" "}
+                    <strong>
+                        <a href="cadastro.html" style={styles.a}>
+                        aqui
+                        </a>
+                    </strong>
+                    .
+                    </p>
+                </form>
+            </div>
         </body>
       </>
     );
