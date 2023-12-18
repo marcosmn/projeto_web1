@@ -1,58 +1,58 @@
 export default function Login() {
     const styles = {
-      body: {
-        backgroundColor: "rgb(3, 3, 26)",
-      },
-      container: {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-      },
-      form: {
-        backgroundColor: "aliceblue",
-        maxWidth: "500px",
-        width: "70%",
-        padding: "20px",
-        position: "absolute",
-        left: "50%",
-        top: "50%",
-        transform: "translate(-50%,-50%)",
-        borderRadius: "20px",
-      },
-      h3: {
-        textAlign: "center",
-        color: "rgb(3, 3, 26)",
-        fontFamily:
-          "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif",
-      },
-      input: {
-        width: "100%",
-        height: "45px",
-        border: "solid 1px #ccc",
-        paddingLeft: "10px",
-        margin: "10px 0",
-      },
-      button: {
-        width: "100%",
-        height: "40px",
-        cursor: "pointer",
-        backgroundColor: "rgb(3, 3, 26)",
-        color: "aliceblue",
-        border: "0",
-        borderRadius: "20px",
-        transition: "1s",
-      },
-      buttonHover: {
-        backgroundColor: "rgb(13, 13, 68)",
-      },
-      p: {
-        textAlign: "center",
-      },
-      a: {
-        color: "rgb(13, 13, 68)",
-        cursor: "pointer",
-      },
+        body: {
+            backgroundColor: "rgb(3, 3, 26)",
+        },
+        container: {
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+        },
+        form: {
+            backgroundColor: "aliceblue",
+            maxWidth: "500px",
+            width: "70%",
+            padding: "20px",
+            position: "absolute",
+            left: "50%",
+            top: "50%",
+            transform: "translate(-50%,-50%)",
+            borderRadius: "20px",
+        },
+        h3: {
+            textAlign: "center",
+            color: "rgb(3, 3, 26)",
+            fontFamily:
+            "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif",
+        },
+        input: {
+            width: "100%",
+            height: "45px",
+            border: "solid 1px #ccc",
+            paddingLeft: "10px",
+            margin: "10px 0",
+        },
+        button: {
+            width: "100%",
+            height: "40px",
+            cursor: "pointer",
+            backgroundColor: "rgb(3, 3, 26)",
+            color: "aliceblue",
+            border: "0",
+            borderRadius: "20px",
+            transition: "1s",
+        },
+        buttonHover: {
+            backgroundColor: "rgb(13, 13, 68)",
+        },
+        p: {
+            textAlign: "center",
+        },
+        a: {
+            color: "rgb(13, 13, 68)",
+            cursor: "pointer",
+        },
     };
   
     function login() {
