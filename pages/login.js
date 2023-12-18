@@ -68,7 +68,7 @@ export default function Login() {
         localStorage.setItem("isLoggedIn", true);
   
         // Redirecionar para a página de sucesso ou fazer outra ação desejada
-        <Link href="/perfil" passHref></Link>
+        window.location.href = "/";
       } else {
         alert("Login falhou. Por favor, verifique suas credenciais.");
       }
