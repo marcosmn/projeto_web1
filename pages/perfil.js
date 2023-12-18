@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Perfil(){
     const styles = {
@@ -86,10 +87,6 @@ export default function Perfil(){
     }
 
     useEffect(() => {
-        // Código que será executado após a renderização inicial da página
-        console.log('Página carregada!');
-        localStorage.setItem("usuario", JSON.stringify({ nome: "pedro", email: "pedro123@gmail" }))
-
         var usuarioDados = localStorage.getItem("usuario");
 
         if(usuarioDados){
@@ -130,9 +127,6 @@ export default function Perfil(){
 
       }, []);
 
-
-
-
         return (
             <> 
                 <header style={styles.header}>
@@ -145,7 +139,7 @@ export default function Perfil(){
                         <h2>Principais Ativos</h2>
                     </div>
                     <div style={styles.div_informacao_perfil} class="foto-perfil">
-                        <img style={styles.img_foto_perfil} class="foto-perfil" src="./imagens/foto-perfil.png" alt="foto de perfil"/>
+                        <Image src="/imagens/foto-perfil.png" style={styles.img_foto_perfil} class="foto_perfil" alt="foto de perfil"/>
 
                         <h2 style={styles.nome_usuario} id="nome-usuario" class="nome-usuario">Usuário</h2>
                         
