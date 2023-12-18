@@ -65,7 +65,7 @@ export default function Index() {
               </div>
               
               <div style={styles.div}class="cadastrar-ativos">
-                  <a href="cadastroDeAcoes.html"><h3 style={styles.h3}>Cadastrar Ativos</h3></a>
+              <Link href="/cadastroDeAcoes"><h3 style={styles.h3}>Cadastrar Ativos</h3></Link>
               </div>
               
               <div style={styles.div} class="graficos">

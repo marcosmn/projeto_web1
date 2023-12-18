@@ -4,8 +4,8 @@ import { FaSearch } from "react-icons/fa";
 import { useState } from "react";
 import { Chart, registerables } from 'chart.js';
 Chart.register(...registerables);
+import Link from 'next/link';
 
-import Link from 'next/link'
 export default function Graficos() {
     const styles = {
         header: {
