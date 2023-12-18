@@ -139,7 +139,7 @@ export default function Perfil(){
                         <h2>Principais Ativos</h2>
                     </div>
                     <div style={styles.div_informacao_perfil} class="foto-perfil">
-                        <Image src="/imagens/foto-perfil.png" style={styles.img_foto_perfil} class="foto_perfil" alt="foto de perfil"/>
+                        <Image src="/imagens/foto-perfil.png" width={200} height={200} style={styles.img_foto_perfil} class="foto_perfil" alt="foto de perfil"/>
 
                         <h2 style={styles.nome_usuario} id="nome-usuario" class="nome-usuario">Usuário</h2>
                         

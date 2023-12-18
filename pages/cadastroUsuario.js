@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function CadastroUsuario() {
     const styles = {
         body: {
@@ -162,11 +164,7 @@ export default function CadastroUsuario() {
     
         // Redireciona para a página de login
         alert('Volte para realizar login');
-        window.location.href = "login.js";
-    }
-    
-    function voltar(){
-        window.location.href = "login.js";
+        window.location.href = "/login";
     }
 
     return (
@@ -217,9 +215,9 @@ export default function CadastroUsuario() {
                             <button type="button" name="cadastro" onClick={cadastrar} style={styles.button}>
                                 Cadastrar
                             </button>
-                            <a href="login.html" className="cadastro-link" style={styles.aCadastroLink}>
+                            <Link href="/login" className="cadastro-link" style={styles.aCadastroLink}>
                                 Voltar
-                            </a>
+                            </Link>
                         </div>
                     </form>
                 </main>
