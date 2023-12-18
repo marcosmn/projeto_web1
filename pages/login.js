@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Login() {
     const styles = {
         body: {
@@ -66,7 +68,7 @@ export default function Login() {
         localStorage.setItem("isLoggedIn", true);
   
         // Redirecionar para a página de sucesso ou fazer outra ação desejada
-        window.location.href = "perfil.html";
+        <Link href="/perfil" passHref></Link>
       } else {
         alert("Login falhou. Por favor, verifique suas credenciais.");
       }
@@ -107,9 +109,9 @@ export default function Login() {
                     <p style={styles.p}>
                     Ainda não possui cadastro? Clique{" "}
                     <strong>
-                        <a href="cadastro.html" style={styles.a}>
-                        aqui
-                        </a>
+                        <Link href="/cadastroUsuario" passHref>
+                            aqui
+                        </Link>
                     </strong>
                     .
                     </p>
