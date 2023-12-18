@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next/link';
 
 export default function CadastroUsuario() {
     const styles = {
@@ -101,7 +101,7 @@ export default function CadastroUsuario() {
 
         divCadastro: {
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "center",
             alignItems: "center",
         },
 
@@ -112,10 +112,10 @@ export default function CadastroUsuario() {
 
         aCadastroLink: {
             display: "inline-block",
-            paddingTop: "8px",
-            paddingBottom: "0px",
-            paddingLeft: "10px",
-            paddingRight: "10px",
+            paddingTop: "20px",
+            paddingBottom: "20px",
+            paddingLeft: "60px",
+            paddingRight: "60px",
             margin: "10px",
             color: "white",
             backgroundColor: "rgb(3, 3, 26)",
@@ -127,7 +127,7 @@ export default function CadastroUsuario() {
             width: "90%",
             cursor: "pointer",
             height: "30px",
-            lineHeight: "20px",
+            lineHeight: "0px",
             textAlign: "center",
         },
 
@@ -164,7 +164,10 @@ export default function CadastroUsuario() {
     
         // Redireciona para a página de login
         alert('Volte para realizar login');
-        window.location.href = "/login";
+    }
+    
+    function voltar(){
+        <Link href="/login" passHref></Link>
     }
 
     return (
@@ -212,11 +215,15 @@ export default function CadastroUsuario() {
                         </section>
 
                         <div style={styles.divCadastro}>
-                            <button type="button" name="cadastro" onClick={cadastrar} style={styles.button}>
-                                Cadastrar
-                            </button>
-                            <Link href="/login" className="cadastro-link" style={styles.aCadastroLink}>
-                                Voltar
+                            <Link href="/login" passHref>
+                                <button type="button" name="cadastro" onClick={cadastrar} style={styles.aCadastroLink}>
+                                    Cadastrar
+                                </button>
+                            </Link>
+                            <Link href="/login" passHref>
+                                <button type="button" name="cadastro" onClick={voltar} style={styles.aCadastroLink}>
+                                    Voltar
+                                </button>
                             </Link>
                         </div>
                     </form>
